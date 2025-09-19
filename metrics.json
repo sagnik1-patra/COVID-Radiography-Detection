@@ -1,0 +1,96 @@
+{
+  "datetime": "2025-09-19 22:41:38",
+  "classes": [
+    "COVID",
+    "Lung_Opacity",
+    "Normal",
+    "Viral Pneumonia"
+  ],
+  "val": {
+    "accuracy": 0.8656167979002625,
+    "f1_macro": 0.8705207853833704,
+    "auc_macro_ovr": 0.9677736708457191,
+    "auc_per_class": {
+      "COVID": 0.9633184006340894,
+      "Lung_Opacity": 0.9532824518514101,
+      "Normal": 0.9551145921174046,
+      "Viral Pneumonia": 0.9993792387799726
+    }
+  },
+  "test": {
+    "accuracy": 0.858290033065659,
+    "f1_macro": 0.8664509423863966,
+    "auc_macro_ovr": 0.966121577401769,
+    "auc_per_class": {
+      "COVID": 0.9609670869339378,
+      "Lung_Opacity": 0.9547862182202924,
+      "Normal": 0.9492412826604175,
+      "Viral Pneumonia": 0.9994917217924281
+    },
+    "classification_report": {
+      "COVID": {
+        "precision": 0.8762541806020067,
+        "recall": 0.7237569060773481,
+        "f1-score": 0.7927382753403933,
+        "support": 362.0
+      },
+      "Lung_Opacity": {
+        "precision": 0.8705035971223022,
+        "recall": 0.8053244592346089,
+        "f1-score": 0.8366464995678479,
+        "support": 601.0
+      },
+      "Normal": {
+        "precision": 0.8345132743362832,
+        "recall": 0.9254170755642787,
+        "f1-score": 0.8776174965100046,
+        "support": 1019.0
+      },
+      "Viral Pneumonia": {
+        "precision": 0.9696969696969697,
+        "recall": 0.9481481481481482,
+        "f1-score": 0.9588014981273408,
+        "support": 135.0
+      },
+      "accuracy": 0.858290033065659,
+      "macro avg": {
+        "precision": 0.8877420054393904,
+        "recall": 0.8506616472560959,
+        "f1-score": 0.8664509423863966,
+        "support": 2117.0
+      },
+      "weighted avg": {
+        "precision": 0.8604888014672619,
+        "recall": 0.858290033065659,
+        "f1-score": 0.8566491417592748,
+        "support": 2117.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        262,
+        18,
+        82,
+        0
+      ],
+      [
+        19,
+        484,
+        98,
+        0
+      ],
+      [
+        18,
+        54,
+        943,
+        4
+      ],
+      [
+        0,
+        0,
+        7,
+        128
+      ]
+    ]
+  }
+}

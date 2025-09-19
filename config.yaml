@@ -1,0 +1,45 @@
+seed: 42
+image_size: 224
+batch_size: 24
+epochs: 15
+val_split: 0.1
+test_split: 0.1
+augment: true
+model:
+  backbone: DenseNet121
+  train_base: false
+  lr: 0.0002
+paths:
+  Viral Pneumonia:
+    images: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\Viral
+      Pneumonia\images
+    masks: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\Viral
+      Pneumonia\masks
+  Normal:
+    images: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\Normal\images
+    masks: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\Normal\masks
+  Lung_Opacity:
+    images: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\Lung_Opacity\images
+    masks: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\Lung_Opacity\masks
+  COVID:
+    images: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\COVID\images
+    masks: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\archive\COVID-19_Radiography_Dataset\COVID\masks
+artifacts_dir: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts
+classes:
+- COVID
+- Lung_Opacity
+- Normal
+- Viral Pneumonia
+splits:
+  train: 17143
+  val: 1905
+  test: 2117
+artifacts:
+  model_h5: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\model.h5
+  label_encoder_pkl: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\label_encoder.pkl
+  class_indices_json: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\class_indices.json
+  metrics_json: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\metrics.json
+  history_json: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\history.json
+  history_csv: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\history.csv
+  predictions_csv: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\predictions_test.csv
+  confusion_matrix_json: C:\Users\NXTWAVE\Downloads\COVID Radiography Detection\artifacts\confusion_matrix.json
